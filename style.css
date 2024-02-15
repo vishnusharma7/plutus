@@ -1,27 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
+
 :root {
     --primary-color: linear-gradient(90.59deg, #ffe4a9, #ffaf00);
-    --primary-bg:#ffaf00;
+    --primary-bg: #ffaf00;
     --text-color: RGB(3, 21, 33);
     --sub-text-color: RGB(107, 107, 132);
     --bg-color: #FFFFFF;
-    --heading-color:#313131;
+    --heading-color: #313131;
     --bg-grey-color: #fafafa;
-    --bg-box-color: #1d1d1d;  
+    --bg-box-color: #1d1d1d;
 
 }
+
 .dark {
     --bg-color: #000000;
     --bg-grey-color: #0e0e0e;
     --bg-box-color: #000000;
     --text-color: #ffffff;
     --sub-text-color: #cfcfcf;
-    --heading-color:#fff;
+    --heading-color: #fff;
 }
+
 html,
 body {
     width: 100%;
@@ -32,15 +36,17 @@ body {
     background-color: #F7F7F7;
     font-family: Manrope;
 }
-ul{
-    list-style:none;
+
+ul {
+    list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 
 }
-.hero-section{
-   
+
+.hero-section {
     width: 97%;
     height: 100%;
     margin: auto;
@@ -50,19 +56,19 @@ a{
     background-size: cover;
     max-width: 1500px;
 }
-.hero-section h2{
-    font-size: 48px;
-    font-weight: 700;
-}
-.text-color{
+
+
+
+.text-color {
     color: #fff;
 }
-button{
+
+button {
     background: none;
     outline: none;
     background: linear-gradient(180deg, #e7b74c, #c89b37);
     border: none;
-    padding:0.5em 1em ;
+    padding: 0.5em 1em;
     border-radius: 0.5em;
     font-weight: 600;
     color: #242424;
@@ -70,154 +76,182 @@ button{
     white-space: nowrap;
 
 }
-.nav-item{
+
+.nav-item {
     white-space: nowrap;
     font-weight: 400;
 }
-.primary-color-bg{
+
+.primary-color-bg {
     background: linear-gradient(90.59deg, #ffe4a9, #ffaf00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 /* tab section */
-section
-{
+section {
     width: 100%;
     margin: auto;
-    padding: 2em ;
+    padding: 2em;
     max-width: 1450px;
     margin-top: 3em;
 }
-.custom-container{
-   
+
+.custom-container {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 2em;
-    
 }
-.tab-items p{
+
+.tab-items p {
     font-size: 28px;
     font-weight: 600;
     cursor: pointer;
 }
-.btn-tab{
+
+.btn-tab {
     border-bottom: 4px solid var(--primary-bg);
 }
-.active-image{
+
+.active-image {
     background-image: url('assets/bgtax.png');
     background-size: cover;
 }
-.active-image img{
+
+.active-image img {
     max-width: 48%;
 }
-.common-text{
+
+.common-text {
     font-size: 20px;
     font-weight: 600;
 }
-h2{
+
+h2 {
     font-size: 48px;
     font-weight: 600;
     color: var(--heading-color);
 }
+
 @media screen and (max-width: 768px) {
-    h2{
+   
+    h2 {
         font-size: 38px;
     }
-    .tab-items p{
+
+    .tab-items p {
         font-size: 24px;
     }
-    .active-image img{
+
+    .active-image img {
         max-width: 80%;
     }
 }
 
-@media screen and (max-width:480px){
-h2{
-    font-size: 28px;
+@media screen and (max-width:480px) {
+    .hero-section h2{
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+
+    .tab-items {
+        gap: 1em;
+    }
+
+    .tab-items p {
+        font-size: 17px;
+    }
+
+    .active-image img {
+        max-width: 100%;
+    }
+
+    p {
+        font-size: 16px !important;
+    }
 }
-.tab-items{
-    gap: 1em;
-}
-.tab-items p{
-    font-size: 17px;
-}
-.active-image img{
-    max-width: 100%;
-}
-p{
-    font-size: 16px !important;
-}
-}
+
 /* why-choose */
-.question{
+.question {
     border-bottom: 1px solid var(--bg-box-color);
     padding: 0.5em 0em;
 }
-.question:last-child{
+
+.question:last-child {
     border-bottom: none;
 }
-.question span{
+
+.question span {
     font-size: 20px;
     background: linear-gradient(180deg, #e7b74c, #ab7a10);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;
 }
-.question p{
+
+.question p {
     font-size: 20px;
     font-weight: 500;
 }
+
 @media screen and (max-width:1200px) {
-    .question-container{
-        flex-direction: column ;
+    .question-container {
+        flex-direction: column;
         justify-content: center;
     }
-   
 }
-@media screen and (max-width:768px){
-    .question-container img{
-        max-width:100% ;
+
+@media screen and (max-width:768px) {
+    .question-container img {
+        max-width: 100%;
         max-height: 350px;
     }
 }
-.review{
-  margin-left: 1.5em;
-   padding: 3.5em;
+
+.review {
+    margin-left: 1.5em;
+    padding: 3.5em;
     background-color: #EFEFEF;
     border-radius: 2em;
 }
-.review-content .title-r{
-font-size: 40px;
-font-weight: 500;
-margin-right: 0.5em;
+
+.review-content .title-r {
+    font-size: 40px;
+    font-weight: 500;
+    margin-right: 0.5em;
 }
 
 @media screen and (max-width: 920px) {
-   .r-content1{
-    justify-content: center !important;
-    margin-top: 2em;
-   } 
-   .review-content{
-    flex-direction: column-reverse;
-   }
-   .review{
-    padding: 1.5em;
-   
-   }
-   .review h3{
-    font-size: 18px !important;
-   }
-   
+    .r-content1 {
+        justify-content: center !important;
+        margin-top: 2em;
+    }
+
+    .review-content {
+        flex-direction: column-reverse;
+    }
+
+    .review {
+        padding: 1.5em;
+
+    }
+
+    .review h3 {
+        font-size: 18px !important;
+    }
 }
-footer{
+
+footer {
     width: 100%;
     color: #ffff;
     background: var(--bg-box-color);
     padding: 2em;
     margin-top: 2em;
-   
+ 
 }
-.icon{
+
+.icon {
     width: 45px;
     height: 34px;
     position: relative;
@@ -229,8 +263,30 @@ footer{
     font-size: 28px;
     color: var(--bg-box-color);
 }
+.office{
+    font-size: 14px;
+    font-weight: 800;
+    color: RGB(200, 200, 200);
+}
+.city{
+    font-size: 18px;
+    font-weight: 700;
+}
+.address{
+    font-size: 14px;
+    color: RGB(200, 200, 200);
+}
+svg{
+    cursor: pointer;
+}
 @media screen and (max-width: 768px) {
-    .footer-right{
+    .footer-right {
+        justify-content: flex-start !important;
+    }
+    .review-content .title-r {
+        font-size: 32px;
+    }
+    .footer-head{
         justify-content: flex-start !important;
     }
 }
