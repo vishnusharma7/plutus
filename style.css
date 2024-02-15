@@ -1,21 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 * {
     margin: 0;
     padding: 0;
 }
 :root {
     --primary-color: linear-gradient(90.59deg, #ffe4a9, #ffaf00);
+    --primary-bg:#ffaf00;
     --text-color: RGB(3, 21, 33);
     --sub-text-color: RGB(107, 107, 132);
     --bg-color: #FFFFFF;
+    --heading-color:#313131;
     --bg-grey-color: #fafafa;
-    --bg-box-color: #1d1d1d;
-    --nav: #ffffff;
-    --border-color: rgb(182, 178, 178);
-    --product-card-shadow: hsla(0, 0%, 0%, 0.14);
-    --box-shadow: 0 2px 28px 0 rgb(0, 0, 0, 0.09);
-    --transition: 0.5s;
-    --hero-text:hsla(0, 0%, 0%, 0.09);
+    --bg-box-color: #1d1d1d;  
 }
 .dark {
     --bg-color: #000000;
@@ -23,24 +19,148 @@
     --bg-box-color: #000000;
     --text-color: #ffffff;
     --sub-text-color: #cfcfcf;
-    --nav: #2A2A2A;
-    --border-color: rgb(77, 75, 75);
-    --box-shadow: 0 2px 28px 0 rgb(255, 255, 255, 0.01);
-    --product-card-shadow: var(--primary-color);
-    --message-text-bg: rgba(160, 159, 161, 0.1);
-    --transition: 0.5s;
-    --hero-text:rgba(255, 255, 255, 0.2);
-
+    --heading-color:#fff;
 }
 html,
 body {
     width: 100%;
     height: 100%;
     margin: auto;
-    font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
     color: var(--text-color);
+    background-color: #F7F7F7;
+    font-family: Manrope;
 }
 ul{
     list-style:none;
+}
+a{
+    text-decoration: none;
+
+}
+.hero-section{
+   
+    width: 97%;
+    height: 100%;
+    margin: auto;
+    margin-top: 6.5em;
+    border-radius: 2em;
+    background-image: url('assets/kellysikkemag-91h3qzoaunsplash-1@2x.png');
+    background-size: cover;
+    max-width: 1500px;
+}
+.hero-section h2{
+    font-size: 48px;
+    font-weight: 700;
+}
+.text-color{
+    color: #fff;
+}
+button{
+    background: none;
+    outline: none;
+    background: linear-gradient(180deg, #e7b74c, #c89b37);
+    border: none;
+    padding:0.5em 1em ;
+    border-radius: 0.5em;
+    font-weight: 600;
+    color: #242424;
+    font-size: 17px;
+    white-space: nowrap;
+
+}
+.nav-item{
+    white-space: nowrap;
+    font-weight: 400;
+}
+.primary-color-bg{
+    background: linear-gradient(90.59deg, #ffe4a9, #ffaf00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* tab section */
+section
+{
+    width: 100%;
+    margin: auto;
+    padding: 2em ;
+    max-width: 1450px;
+    margin-top: 3em;
+}
+.custom-container{
+   
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 2em;
+    
+}
+.tab-items p{
+    font-size: 28px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn-tab{
+    border-bottom: 4px solid var(--primary-bg);
+}
+.active-image img{
+    max-width: 40%;
+}
+h2{
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+@media screen and (max-width: 768px) {
+    h2{
+        font-size: 38px;
+    }
+    .tab-items p{
+        font-size: 24px;
+    }
+    .active-image img{
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width:480px){
+h2{
+    font-size: 28px;
+}
+.tab-items{
+    gap: 1em;
+}
+.tab-items p{
+    font-size: 17px;
+}
+.active-image img{
+    max-width: 100%;
+}
+p{
+    font-size: 16px !important;
+}
+}
+/* why-choose */
+.question{
+    border-bottom: 1px solid var(--bg-box-color);
+    padding: 0.5em 0em;
+}
+.question:last-child{
+    border-bottom: none;
+}
+.question span{
+    font-size: 20px;
+    background: linear-gradient(180deg, #e7b74c, #ab7a10);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+.question p{
+    font-size: 20px;
+    font-weight: 500;
+}
+@media screen and (max-width:1200px) {
+    .question-container{
+        flex-direction: column ;
+        justify-content: center;
+    }
 }
