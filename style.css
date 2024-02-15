@@ -12,6 +12,7 @@
     --heading-color:#313131;
     --bg-grey-color: #fafafa;
     --bg-box-color: #1d1d1d;  
+
 }
 .dark {
     --bg-color: #000000;
@@ -102,8 +103,16 @@ section
 .btn-tab{
     border-bottom: 4px solid var(--primary-bg);
 }
+.active-image{
+    background-image: url('assets/bgtax.png');
+    background-size: cover;
+}
 .active-image img{
-    max-width: 40%;
+    max-width: 48%;
+}
+.common-text{
+    font-size: 20px;
+    font-weight: 600;
 }
 h2{
     font-size: 48px;
@@ -169,5 +178,59 @@ p{
     .question-container img{
         max-width:100% ;
         max-height: 350px;
+    }
+}
+.review{
+  margin-left: 1.5em;
+   padding: 3.5em;
+    background-color: #EFEFEF;
+    border-radius: 2em;
+}
+.review-content .title-r{
+font-size: 40px;
+font-weight: 500;
+margin-right: 0.5em;
+}
+
+@media screen and (max-width: 920px) {
+   .r-content1{
+    justify-content: center !important;
+    margin-top: 2em;
+   } 
+   .review-content{
+    flex-direction: column-reverse;
+   }
+   .review{
+    padding: 1.5em;
+   
+   }
+   .review h3{
+    font-size: 18px !important;
+   }
+   
+}
+footer{
+    width: 100%;
+    color: #ffff;
+    background: var(--bg-box-color);
+    padding: 2em;
+    margin-top: 2em;
+   
+}
+.icon{
+    width: 45px;
+    height: 34px;
+    position: relative;
+    border-radius: 8px;
+    background-color: #d9d9d9;
+    z-index: 1;
+    letter-spacing: -0.04em;
+    font-weight: 800;
+    font-size: 28px;
+    color: var(--bg-box-color);
+}
+@media screen and (max-width: 768px) {
+    .footer-right{
+        justify-content: flex-start !important;
     }
 }
