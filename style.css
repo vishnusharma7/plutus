@@ -7,14 +7,14 @@
 
 :root {
     --primary-color: linear-gradient(90.59deg, #ffe4a9, #ffaf00);
-    --primary-bg: #ffaf00;
+    --primary-bg: #CBAF66;
     --text-color: RGB(3, 21, 33);
     --sub-text-color: RGB(107, 107, 132);
+    --text-grey:#666666;
     --bg-color: #FFFFFF;
     --heading-color: #313131;
     --bg-grey-color: #fafafa;
     --bg-box-color: #1d1d1d;
-
 }
 
 .dark {
@@ -54,9 +54,16 @@ a {
     border-radius: 2em;
     background-image: url('assets/kellysikkemag-91h3qzoaunsplash-1@2x.png');
     background-size: cover;
-    max-width: 1500px;
+    max-width: 1300px;
 }
-
+@media screen and (max-width: 768px) {
+    .hero-section{
+        height: 60%;
+    }
+    .navbar-nav{
+        gap: 0.5em !important;
+    }
+}
 
 
 .text-color {
@@ -70,16 +77,32 @@ button {
     border: none;
     padding: 0.5em 1em;
     border-radius: 0.5em;
-    font-weight: 600;
-    color: #242424;
+    font-weight: 500;
+    color: #ffffff;
     font-size: 17px;
     white-space: nowrap;
+    transition: 0.2s ease-in-out;
 
 }
+svg{
+    transition: 0.2s ease-in-out;
 
+}
+button:hover svg{
+    transform: translateX(5px);
+}
+@media screen and (max-width: 768px) {
+    button{
+        font-size: 14px;
+    }
+}
 .nav-item {
     white-space: nowrap;
     font-weight: 400;
+    font-size: 14px;
+}
+ .nav-link:hover{
+    color:var(--primary-bg) ;
 }
 
 .primary-color-bg {
@@ -93,7 +116,7 @@ section {
     width: 100%;
     margin: auto;
     padding: 2em;
-    max-width: 1450px;
+    max-width: 1300px;
     margin-top: 3em;
 }
 
@@ -103,12 +126,13 @@ section {
 }
 
 .tab-items p {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 600;
     cursor: pointer;
+    color: var(--sub-text-color);
 }
 
-.btn-tab {
+.active-btn-tab {
     border-bottom: 4px solid var(--primary-bg);
 }
 
@@ -116,7 +140,9 @@ section {
     background-image: url('assets/bgtax.png');
     background-size: cover;
 }
-
+.swiper-slide{
+    background: #F7F7F7 !important;
+}
 .active-image img {
     max-width: 48%;
 }
@@ -194,7 +220,19 @@ h2 {
     font-size: 20px;
     font-weight: 500;
 }
-
+.accordion-button{
+    font-family: Manrope;
+    background: #F7F7F7;
+    padding: 2em 0;
+    font-weight: 500;
+    color: var(--text-grey);
+}
+.accordion-collapse{
+    background: #F7F7F7;;
+}
+.accordion-button:not(.collapsed){
+    background-color: #F7F7F7;
+}
 @media screen and (max-width:1200px) {
     .question-container {
         flex-direction: column;

@@ -7,6 +7,24 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <style>
+    /* Additional CSS styling */
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center content vertically */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+   
+  </style>
   <title>Plutus</title>
 </head>
 
@@ -16,13 +34,15 @@
       <a class="navbar-brand" href="#" style="max-width: 60%">
         <img src="assets/logo-1@2x.png" alt="" style="width: 120px;">
       </a>
+
       <button class="navbar-toggler" style="background-color: #fff;" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
+
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex gap-3">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex gap-5">
           <li class="nav-item ">
             <a class="nav-link active" aria-current="page" href="#" style="color: #fff;">Home</a>
           </li>
@@ -61,7 +81,7 @@
   <section class="hero-section d-flex gap-4 align-items-center justify-content-center">
     <div class="container text-center col-lg-8 d-flex flex-column gap-2">
       <h2 class="primary-color-bg">Plutus Consulting</h2>
-      <p class="text-color" style="font-size: 20px;">Plutus Consulting, or “PC” as we call it, has been a trusted
+      <p class="text-color" style="font-size: 18px;">Plutus Consulting, or “PC” as we call it, has been a trusted
         advisor to its clients since past many years. With over 55 years of man experience at leadership level our team
         comprises CA, DISA, CS, LLB etc.</p>
       <div class="d-flex align-items-center justify-content-center">
@@ -69,44 +89,106 @@
           <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M1.84568 9.12003e-07L12.2778 0C12.3637 -7.51328e-09 12.4462 0.0150111 12.5226 0.0425544C12.5335 0.0464892 12.5443 0.0506797 12.555 0.0551188C12.6383 0.0896865 12.7164 0.140514 12.7845 0.207601C12.7872 0.210213 12.7898 0.212845 12.7924 0.215498C12.9208 0.345869 13 0.524795 13 0.722222V11.1543C13 11.5532 12.6767 11.8765 12.2778 11.8765C11.8789 11.8765 11.5556 11.5532 11.5556 11.1543V2.46582L1.23291 12.7885C0.950865 13.0705 0.493579 13.0705 0.211534 12.7885C-0.0705113 12.5064 -0.0705113 12.0491 0.211534 11.7671L10.5342 1.44444L1.84568 1.44445C1.44681 1.44445 1.12346 1.1211 1.12346 0.722223C1.12346 0.323351 1.44681 9.12003e-07 1.84568 9.12003e-07Z"
-              fill="#232323" />
+              fill="#ffffff" />
           </svg>
         </button>
       </div>
     </div>
   </section>
   <!-- tab section -->
+  <!-- Swiper -->
   <section class="custom-container">
-    <div class="container d-flex flex-column gap-3  text-center">
+    <!-- Tabs -->
+    <div class="container d-flex flex-column gap-3 text-center">
       <h2 class="container text-center">What We Do?</h2>
       <div class="d-flex justify-content-center align-items-center justify-content-evenly flex-wrap mb-0 tab-items">
-        <p class="mb-0 btn-tab">Taxation</p>
-        <p class="mb-0">Transaction Advisory</p>
-        <p class="mb-0">Secretarial Advisory</p>
-        <p class="mb-0">Corporate Legal</p>
+        <p class="mb-0 btn-tab" data-tab="taxation" >Taxation</p>
+        <p class="mb-0 btn-tab" data-tab="transaction">Transaction Advisory</p>
+        <p class="mb-0 btn-tab" data-tab="secretarial">Secretarial Advisory</p>
+        <p class="mb-0 btn-tab" data-tab="legal">Corporate Legal</p>
       </div>
-      <div class="active-image">
-        <img src="assets/1-1@2x.png" alt="">
-      </div>
-      <div class="bottom-part">
-        <h2>Taxation</h2>
-        <p style="font-size:20px; font-weight:400; color:var( --heading-color)">Documentation, Preparation and filing of
-          tax returns</p>
-        <div class="d-flex justify-content-center gap-3 align-items-center">
-          <div class="d-flex align-items-center gap-2" style="color: rgba(0, 87, 255, 1);font-size:20px;    white-space: nowrap;
-        ">
-            Learn more
-            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M1.77917 1.15509C1.48628 0.862202 1.0114 0.862202 0.71851 1.15509C0.425617 1.44799 0.425617 1.92286 0.71851 2.21575L4.81532 6.31256L0.71851 10.4094C0.425617 10.7023 0.425617 11.1771 0.71851 11.47C1.0114 11.7629 1.48628 11.7629 1.77917 11.47L6.39426 6.85494C6.54377 6.70543 6.61696 6.5085 6.61383 6.31256C6.61696 6.11663 6.54377 5.9197 6.39426 5.77018L1.77917 1.15509Z"
-                fill="#0057FF" />
-            </svg>
+    </div>
+  
+    <!-- Swiper for image and bottom part -->
+    <div class="swiper-container" style="overflow: hidden;">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide d-flex flex-column" data-part="taxation">
+          <div class="active-image">
+            <img src="assets/tab-1.png" alt="">
           </div>
-          <button>Explore all services</button>
+          <div class="bottom-part active part" data-part="taxation">
+            <h2>Taxation</h2>
+            <p style="font-size:20px; font-weight:400; color:var(--heading-color)">Documentation, Preparation and filing of tax returns</p>
+            <div class="d-flex justify-content-center gap-3 align-items-center">
+              <div class="d-flex align-items-center gap-2" style="color: rgba(0, 87, 255, 1); font-size:20px; white-space: nowrap;">
+                Learn more
+                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.77917 1.15509C1.48628 0.862202 1.0114 0.862202 0.71851 1.15509C0.425617 1.44799 0.425617 1.92286 0.71851 2.21575L4.81532 6.31256L0.71851 10.4094C0.425617 10.7023 0.425617 11.1771 0.71851 11.47C1.0114 11.7629 1.48628 11.7629 1.77917 11.47L6.39426 6.85494C6.54377 6.70543 6.61696 6.5085 6.61383 6.31256C6.61696 6.11663 6.54377 5.9197 6.39426 5.77018L1.77917 1.15509Z" fill="#0057FF" />
+                </svg>
+              </div>
+              <button>Explore all services</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide d-flex flex-column" data-part="transaction">
+          <div class="active-image">
+            <img src="assets/tab-1.png" alt="">
+          </div>
+          <div class="bottom-part active part" data-part="transaction">
+            <h2>Transaction Advisory</h2>
+            <p style="font-size:20px; font-weight:400; color:var(--heading-color)">Documentation, Preparation and filing of tax returns</p>
+            <div class="d-flex justify-content-center gap-3 align-items-center">
+              <div class="d-flex align-items-center gap-2" style="color: rgba(0, 87, 255, 1); font-size:20px; white-space: nowrap;">
+                Learn more
+                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.77917 1.15509C1.48628 0.862202 1.0114 0.862202 0.71851 1.15509C0.425617 1.44799 0.425617 1.92286 0.71851 2.21575L4.81532 6.31256L0.71851 10.4094C0.425617 10.7023 0.425617 11.1771 0.71851 11.47C1.0114 11.7629 1.48628 11.7629 1.77917 11.47L6.39426 6.85494C6.54377 6.70543 6.61696 6.5085 6.61383 6.31256C6.61696 6.11663 6.54377 5.9197 6.39426 5.77018L1.77917 1.15509Z" fill="#0057FF" />
+                </svg>
+              </div>
+              <button>Explore all services</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide d-flex flex-column" data-part="secretarial">
+          <div class="active-image">
+            <img src="assets/tab-1.png" alt="">
+          </div>
+          <div class="bottom-part active part" data-part="secretarial">
+            <h2>Secretarial Advisory</h2>
+            <p style="font-size:20px; font-weight:400; color:var(--heading-color)">Documentation, Preparation and filing of tax returns</p>
+            <div class="d-flex justify-content-center gap-3 align-items-center">
+              <div class="d-flex align-items-center gap-2" style="color: rgba(0, 87, 255, 1); font-size:20px; white-space: nowrap;">
+                Learn more
+                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.77917 1.15509C1.48628 0.862202 1.0114 0.862202 0.71851 1.15509C0.425617 1.44799 0.425617 1.92286 0.71851 2.21575L4.81532 6.31256L0.71851 10.4094C0.425617 10.7023 0.425617 11.1771 0.71851 11.47C1.0114 11.7629 1.48628 11.7629 1.77917 11.47L6.39426 6.85494C6.54377 6.70543 6.61696 6.5085 6.61383 6.31256C6.61696 6.11663 6.54377 5.9197 6.39426 5.77018L1.77917 1.15509Z" fill="#0057FF" />
+                </svg>
+              </div>
+              <button>Explore all services</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide d-flex flex-column" data-part="legal">
+          <div class="active-image">
+            <img src="assets/tab-1.png" alt="">
+          </div>
+          <div class="bottom-part active part" data-part="legal">
+            <h2>Corporate Legal</h2>
+            <p style="font-size:20px; font-weight:400; color:var(--heading-color)">Documentation, Preparation and filing of tax returns</p>
+            <div class="d-flex justify-content-center gap-3 align-items-center">
+              <div class="d-flex align-items-center gap-2" style="color: rgba(0, 87, 255, 1); font-size:20px; white-space: nowrap;">
+                Learn more
+                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.77917 1.15509C1.48628 0.862202 1.0114 0.862202 0.71851 1.15509C0.425617 1.44799 0.425617 1.92286 0.71851 2.21575L4.81532 6.31256L0.71851 10.4094C0.425617 10.7023 0.425617 11.1771 0.71851 11.47C1.0114 11.7629 1.48628 11.7629 1.77917 11.47L6.39426 6.85494C6.54377 6.70543 6.61696 6.5085 6.61383 6.31256C6.61696 6.11663 6.54377 5.9197 6.39426 5.77018L1.77917 1.15509Z" fill="#0057FF" />
+                </svg>
+              </div>
+              <button>Explore all services</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
+  
+  <!-- Swiper JS -->
 
   <!-- why choose us -->
   <section>
@@ -117,28 +199,64 @@
           <img src="assets/untitled-design--20240121t211623-1@2x.png" alt=""
             style="width: 500px;height:525px;margin:auto">
         </div>
-        <div class="d-flex flex-column gap-2">
-          <h3 style="font-size: 20px;font-weight:600;">We foresee and approach the problems before they approach our
+        <div class="d-flex flex-column gap-2 ">
+          <h3 style="font-size: 18px;font-weight:500;">We foresee and approach the problems before they approach our
             Clients. We kill the problems before they commit the crimes. Our weapons being:</h3>
-          <div class="d-flex gap-3 question">
-            <span>01</span>
-            <p>Our young and dynamic team capable of confronting the stress and complexity of work</p>
-          </div>
-          <div class="d-flex gap-3 question">
-            <span>02</span>
-            <p>Our strong and wide network capable of setting up a parameter around the work to finish it</p>
-          </div>
-          <div class="d-flex gap-3 question">
-            <span>03</span>
-            <p>Our ethical values to protect the client</p>
-          </div>
-          <div class="d-flex gap-3 question">
-            <span>04</span>
-            <p>Our client centric approach to make them feel sorted and happy</p>
-          </div>
-          <div class="d-flex gap-3 question">
-            <span>05</span>
-            <p>Use of a highly digitised approach with minimum paperwork ensures faster delivery with less hassles</p>
+
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Our young and dynamic team capable of confronting the stress and complexity of work
+                </div>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sunt sint cumque in sed sequi iste. Autem optio quae ducimus accusantium nulla eius iusto odio consectetur eaque unde, nesciunt officiis reprehenderit corrupti perferendis? Ut ab natus quas, officiis voluptatem libero suscipit iste minima, sit expedita temporibus. Culpa corporis, ipsum ipsa iste ad assumenda perferendis nostrum iusto debitis esse, aliquid dolores.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <div class="accordion-button collapsed  " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Our strong and wide network capable of setting up a parameter around the work to finish it
+                </div>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sunt sint cumque in sed sequi iste. Autem optio quae ducimus accusantium nulla eius iusto odio consectetur eaque unde, nesciunt officiis reprehenderit corrupti perferendis? Ut ab natus quas, officiis voluptatem libero suscipit iste minima, sit expedita temporibus. Culpa corporis, ipsum ipsa iste ad assumenda perferendis nostrum iusto debitis esse, aliquid dolores.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Our ethical values to protect the client
+                </div>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sunt sint cumque in sed sequi iste. Autem optio quae ducimus accusantium nulla eius iusto odio consectetur eaque unde, nesciunt officiis reprehenderit corrupti perferendis? Ut ab natus quas, officiis voluptatem libero suscipit iste minima, sit expedita temporibus. Culpa corporis, ipsum ipsa iste ad assumenda perferendis nostrum iusto debitis esse, aliquid dolores.</div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  Our commitment to excellence
+                </div>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sunt sint cumque in sed sequi iste. Autem optio quae ducimus accusantium nulla eius iusto odio consectetur eaque unde, nesciunt officiis reprehenderit corrupti perferendis? Ut ab natus quas, officiis voluptatem libero suscipit iste minima, sit expedita temporibus. Culpa corporis, ipsum ipsa iste ad assumenda perferendis nostrum iusto debitis esse, aliquid dolores.</div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                  Our dedication to customer satisfaction
+                </div>
+              </h2>
+              <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sunt sint cumque in sed sequi iste. Autem optio quae ducimus accusantium nulla eius iusto odio consectetur eaque unde, nesciunt officiis reprehenderit corrupti perferendis? Ut ab natus quas, officiis voluptatem libero suscipit iste minima, sit expedita temporibus. Culpa corporis, ipsum ipsa iste ad assumenda perferendis nostrum iusto debitis esse, aliquid dolores.</div>
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -198,9 +316,13 @@
             <p style="font-size: 16px;font-weight:400;color:var( --sub-text-color)">CEO, qDesq</p>
           </div>
         </div>
+
       </div>
     </div>
   </section>
+ 
+
+
 
   <footer>
     <div class="d-flex flex-wrap gap-5 justify-content-evenly footer-head">
@@ -241,8 +363,9 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-
+<script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
