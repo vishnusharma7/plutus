@@ -14,6 +14,7 @@
       width: 100%;
       height: 100%;
     }
+
     .swiper-slide {
       text-align: center;
       font-size: 18px;
@@ -23,7 +24,6 @@
       align-items: center;
       justify-content: center;
     }
-   
   </style>
   <title>Plutus</title>
 </head>
@@ -34,23 +34,24 @@
       <a class="navbar-brand" href="#" style="max-width: 60%">
         <img src="assets/logo-1@2x.png" alt="" style="width: 120px;">
       </a>
-
+   
       <button class="navbar-toggler" style="background-color: #fff;" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
 
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex gap-5">
           <li class="nav-item ">
-            <a class="nav-link active" aria-current="page" href="#" style="color: #fff;">Home</a>
+            <a href="#" class="nav-link active" aria-current="page" href="#" style="color: #fff;">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" style="color: #fff;">About us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" style="color: #fff;">Services</a>
+            <a href="service.html" class="nav-link" href="#" style="color: #fff;">Services</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" style="color: #fff;">Our Team</a>
@@ -58,8 +59,8 @@
           <li class="nav-item">
             <a class="nav-link" href="#" style="color: #fff;">Contact</a>
           </li>
-          <li class="nav-link">
-            <svg class="" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+          <li class="nav-link d-lg-block d-none">
+            <svg  xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M12.6651 14.4328C11.3491 15.3901 9.72919 15.9548 7.97738 15.9548C3.57159 15.9548 0 12.3832 0 7.97738C0 3.57159 3.57159 0 7.97738 0C12.3832 0 15.9548 3.57159 15.9548 7.97738C15.9548 9.72919 15.3901 11.3491 14.4328 12.6651L19.8839 18.1161C20.372 18.6043 20.372 19.3957 19.8839 19.8839C19.3957 20.372 18.6043 20.372 18.1161 19.8839L12.6651 14.4328ZM13.5785 7.97739C13.5785 11.0708 11.0708 13.5785 7.97737 13.5785C4.88395 13.5785 2.37623 11.0708 2.37623 7.97739C2.37623 4.88397 4.88395 2.37625 7.97737 2.37625C11.0708 2.37625 13.5785 4.88397 13.5785 7.97739Z"
                 fill="url(#paint0_linear_0_6)" />
@@ -102,13 +103,13 @@
     <div class="container d-flex flex-column gap-3 text-center">
       <h2 class="container text-center">What We Do?</h2>
       <div class="d-flex justify-content-center align-items-center justify-content-evenly flex-wrap mb-0 tab-items">
-        <p class="mb-0 btn-tab" data-tab="taxation" >Taxation</p>
+        <p class="mb-0 btn-tab" data-tab="taxation">Taxation</p>
         <p class="mb-0 btn-tab" data-tab="transaction">Transaction Advisory</p>
         <p class="mb-0 btn-tab" data-tab="secretarial">Secretarial Advisory</p>
         <p class="mb-0 btn-tab" data-tab="legal">Corporate Legal</p>
       </div>
     </div>
-  
+
     <!-- Swiper for image and bottom part -->
     <div class="swiper-container" style="overflow: hidden;">
       <div class="swiper-wrapper">
@@ -118,12 +119,16 @@
           </div>
           <div class="bottom-part active part" data-part="taxation">
             <h2>Taxation</h2>
-            <p style="font-size:20px; font-weight:400; color:var(--heading-color)">Documentation, Preparation and filing of tax returns</p>
+            <p style="font-size:20px; font-weight:400; color:var(--heading-color)">Documentation, Preparation and filing
+              of tax returns</p>
             <div class="d-flex justify-content-center gap-3 align-items-center">
-              <div class="d-flex align-items-center gap-2" style="color: rgba(0, 87, 255, 1); font-size:20px; white-space: nowrap;">
+              <div class="d-flex align-items-center gap-2"
+                style="color: rgba(0, 87, 255, 1); font-size:20px; white-space: nowrap;">
                 Learn more
                 <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.77917 1.15509C1.48628 0.862202 1.0114 0.862202 0.71851 1.15509C0.425617 1.44799 0.425617 1.92286 0.71851 2.21575L4.81532 6.31256L0.71851 10.4094C0.425617 10.7023 0.425617 11.1771 0.71851 11.47C1.0114 11.7629 1.48628 11.7629 1.77917 11.47L6.39426 6.85494C6.54377 6.70543 6.61696 6.5085 6.61383 6.31256C6.61696 6.11663 6.54377 5.9197 6.39426 5.77018L1.77917 1.15509Z" fill="#0057FF" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.77917 1.15509C1.48628 0.862202 1.0114 0.862202 0.71851 1.15509C0.425617 1.44799 0.425617 1.92286 0.71851 2.21575L4.81532 6.31256L0.71851 10.4094C0.425617 10.7023 0.425617 11.1771 0.71851 11.47C1.0114 11.7629 1.48628 11.7629 1.77917 11.47L6.39426 6.85494C6.54377 6.70543 6.61696 6.5085 6.61383 6.31256C6.61696 6.11663 6.54377 5.9197 6.39426 5.77018L1.77917 1.15509Z"
+                    fill="#0057FF" />
                 </svg>
               </div>
               <button>Explore all services</button>
@@ -136,12 +141,16 @@
           </div>
           <div class="bottom-part active part" data-part="transaction">
             <h2>Transaction Advisory</h2>
-            <p style="font-size:20px; font-weight:400; color:var(--heading-color)">Documentation, Preparation and filing of tax returns</p>
+            <p style="font-size:20px; font-weight:400; color:var(--heading-color)">Documentation, Preparation and filing
+              of tax returns</p>
             <div class="d-flex justify-content-center gap-3 align-items-center">
-              <div class="d-flex align-items-center gap-2" style="color: rgba(0, 87, 255, 1); font-size:20px; white-space: nowrap;">
+              <div class="d-flex align-items-center gap-2"
+                style="color: rgba(0, 87, 255, 1); font-size:20px; white-space: nowrap;">
                 Learn more
                 <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.77917 1.15509C1.48628 0.862202 1.0114 0.862202 0.71851 1.15509C0.425617 1.44799 0.425617 1.92286 0.71851 2.21575L4.81532 6.31256L0.71851 10.4094C0.425617 10.7023 0.425617 11.1771 0.71851 11.47C1.0114 11.7629 1.48628 11.7629 1.77917 11.47L6.39426 6.85494C6.54377 6.70543 6.61696 6.5085 6.61383 6.31256C6.61696 6.11663 6.54377 5.9197 6.39426 5.77018L1.77917 1.15509Z" fill="#0057FF" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.77917 1.15509C1.48628 0.862202 1.0114 0.862202 0.71851 1.15509C0.425617 1.44799 0.425617 1.92286 0.71851 2.21575L4.81532 6.31256L0.71851 10.4094C0.425617 10.7023 0.425617 11.1771 0.71851 11.47C1.0114 11.7629 1.48628 11.7629 1.77917 11.47L6.39426 6.85494C6.54377 6.70543 6.61696 6.5085 6.61383 6.31256C6.61696 6.11663 6.54377 5.9197 6.39426 5.77018L1.77917 1.15509Z"
+                    fill="#0057FF" />
                 </svg>
               </div>
               <button>Explore all services</button>
@@ -154,12 +163,16 @@
           </div>
           <div class="bottom-part active part" data-part="secretarial">
             <h2>Secretarial Advisory</h2>
-            <p style="font-size:20px; font-weight:400; color:var(--heading-color)">Documentation, Preparation and filing of tax returns</p>
+            <p style="font-size:20px; font-weight:400; color:var(--heading-color)">Documentation, Preparation and filing
+              of tax returns</p>
             <div class="d-flex justify-content-center gap-3 align-items-center">
-              <div class="d-flex align-items-center gap-2" style="color: rgba(0, 87, 255, 1); font-size:20px; white-space: nowrap;">
+              <div class="d-flex align-items-center gap-2"
+                style="color: rgba(0, 87, 255, 1); font-size:20px; white-space: nowrap;">
                 Learn more
                 <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.77917 1.15509C1.48628 0.862202 1.0114 0.862202 0.71851 1.15509C0.425617 1.44799 0.425617 1.92286 0.71851 2.21575L4.81532 6.31256L0.71851 10.4094C0.425617 10.7023 0.425617 11.1771 0.71851 11.47C1.0114 11.7629 1.48628 11.7629 1.77917 11.47L6.39426 6.85494C6.54377 6.70543 6.61696 6.5085 6.61383 6.31256C6.61696 6.11663 6.54377 5.9197 6.39426 5.77018L1.77917 1.15509Z" fill="#0057FF" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.77917 1.15509C1.48628 0.862202 1.0114 0.862202 0.71851 1.15509C0.425617 1.44799 0.425617 1.92286 0.71851 2.21575L4.81532 6.31256L0.71851 10.4094C0.425617 10.7023 0.425617 11.1771 0.71851 11.47C1.0114 11.7629 1.48628 11.7629 1.77917 11.47L6.39426 6.85494C6.54377 6.70543 6.61696 6.5085 6.61383 6.31256C6.61696 6.11663 6.54377 5.9197 6.39426 5.77018L1.77917 1.15509Z"
+                    fill="#0057FF" />
                 </svg>
               </div>
               <button>Explore all services</button>
@@ -167,17 +180,21 @@
           </div>
         </div>
         <div class="swiper-slide d-flex flex-column" data-part="legal">
-          <div class="active-image">
-            <img src="assets/tab-1.png" alt="">
+          <div class="active-image" style="max-width: 100%;">
+            <img src="assets/tab-2.png" alt="" style="max-width:100%">
           </div>
           <div class="bottom-part active part" data-part="legal">
             <h2>Corporate Legal</h2>
-            <p style="font-size:20px; font-weight:400; color:var(--heading-color)">Documentation, Preparation and filing of tax returns</p>
+            <p style="font-size:20px; font-weight:400; color:var(--heading-color)">Documentation, Preparation and filing
+              of tax returns</p>
             <div class="d-flex justify-content-center gap-3 align-items-center">
-              <div class="d-flex align-items-center gap-2" style="color: rgba(0, 87, 255, 1); font-size:20px; white-space: nowrap;">
+              <div class="d-flex align-items-center gap-2"
+                style="color: rgba(0, 87, 255, 1); font-size:20px; white-space: nowrap;">
                 Learn more
                 <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.77917 1.15509C1.48628 0.862202 1.0114 0.862202 0.71851 1.15509C0.425617 1.44799 0.425617 1.92286 0.71851 2.21575L4.81532 6.31256L0.71851 10.4094C0.425617 10.7023 0.425617 11.1771 0.71851 11.47C1.0114 11.7629 1.48628 11.7629 1.77917 11.47L6.39426 6.85494C6.54377 6.70543 6.61696 6.5085 6.61383 6.31256C6.61696 6.11663 6.54377 5.9197 6.39426 5.77018L1.77917 1.15509Z" fill="#0057FF" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.77917 1.15509C1.48628 0.862202 1.0114 0.862202 0.71851 1.15509C0.425617 1.44799 0.425617 1.92286 0.71851 2.21575L4.81532 6.31256L0.71851 10.4094C0.425617 10.7023 0.425617 11.1771 0.71851 11.47C1.0114 11.7629 1.48628 11.7629 1.77917 11.47L6.39426 6.85494C6.54377 6.70543 6.61696 6.5085 6.61383 6.31256C6.61696 6.11663 6.54377 5.9197 6.39426 5.77018L1.77917 1.15509Z"
+                    fill="#0057FF" />
                 </svg>
               </div>
               <button>Explore all services</button>
@@ -187,7 +204,7 @@
       </div>
     </div>
   </section>
-  
+
   <!-- Swiper JS -->
 
   <!-- why choose us -->
@@ -206,57 +223,82 @@
           <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                   Our young and dynamic team capable of confronting the stress and complexity of work
                 </div>
               </h2>
               <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sunt sint cumque in sed sequi iste. Autem optio quae ducimus accusantium nulla eius iusto odio consectetur eaque unde, nesciunt officiis reprehenderit corrupti perferendis? Ut ab natus quas, officiis voluptatem libero suscipit iste minima, sit expedita temporibus. Culpa corporis, ipsum ipsa iste ad assumenda perferendis nostrum iusto debitis esse, aliquid dolores.</div>
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sunt
+                  sint cumque in sed sequi iste. Autem optio quae ducimus accusantium nulla eius iusto odio consectetur
+                  eaque unde, nesciunt officiis reprehenderit corrupti perferendis? Ut ab natus quas, officiis
+                  voluptatem libero suscipit iste minima, sit expedita temporibus. Culpa corporis, ipsum ipsa iste ad
+                  assumenda perferendis nostrum iusto debitis esse, aliquid dolores.</div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <div class="accordion-button collapsed  " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                Our strong and wide network capable of setting up a parameter around the work to finish it
+                <div class="accordion-button collapsed  " type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Our strong and wide network capable of setting up a parameter around the work to finish it
                 </div>
               </h2>
               <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sunt sint cumque in sed sequi iste. Autem optio quae ducimus accusantium nulla eius iusto odio consectetur eaque unde, nesciunt officiis reprehenderit corrupti perferendis? Ut ab natus quas, officiis voluptatem libero suscipit iste minima, sit expedita temporibus. Culpa corporis, ipsum ipsa iste ad assumenda perferendis nostrum iusto debitis esse, aliquid dolores.</div>
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sunt
+                  sint cumque in sed sequi iste. Autem optio quae ducimus accusantium nulla eius iusto odio consectetur
+                  eaque unde, nesciunt officiis reprehenderit corrupti perferendis? Ut ab natus quas, officiis
+                  voluptatem libero suscipit iste minima, sit expedita temporibus. Culpa corporis, ipsum ipsa iste ad
+                  assumenda perferendis nostrum iusto debitis esse, aliquid dolores.</div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                   Our ethical values to protect the client
                 </div>
               </h2>
               <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sunt sint cumque in sed sequi iste. Autem optio quae ducimus accusantium nulla eius iusto odio consectetur eaque unde, nesciunt officiis reprehenderit corrupti perferendis? Ut ab natus quas, officiis voluptatem libero suscipit iste minima, sit expedita temporibus. Culpa corporis, ipsum ipsa iste ad assumenda perferendis nostrum iusto debitis esse, aliquid dolores.</div>
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sunt
+                  sint cumque in sed sequi iste. Autem optio quae ducimus accusantium nulla eius iusto odio consectetur
+                  eaque unde, nesciunt officiis reprehenderit corrupti perferendis? Ut ab natus quas, officiis
+                  voluptatem libero suscipit iste minima, sit expedita temporibus. Culpa corporis, ipsum ipsa iste ad
+                  assumenda perferendis nostrum iusto debitis esse, aliquid dolores.</div>
               </div>
             </div>
-            
+
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                   Our commitment to excellence
                 </div>
               </h2>
               <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sunt sint cumque in sed sequi iste. Autem optio quae ducimus accusantium nulla eius iusto odio consectetur eaque unde, nesciunt officiis reprehenderit corrupti perferendis? Ut ab natus quas, officiis voluptatem libero suscipit iste minima, sit expedita temporibus. Culpa corporis, ipsum ipsa iste ad assumenda perferendis nostrum iusto debitis esse, aliquid dolores.</div>
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sunt
+                  sint cumque in sed sequi iste. Autem optio quae ducimus accusantium nulla eius iusto odio consectetur
+                  eaque unde, nesciunt officiis reprehenderit corrupti perferendis? Ut ab natus quas, officiis
+                  voluptatem libero suscipit iste minima, sit expedita temporibus. Culpa corporis, ipsum ipsa iste ad
+                  assumenda perferendis nostrum iusto debitis esse, aliquid dolores.</div>
               </div>
             </div>
-            
+
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
                   Our dedication to customer satisfaction
                 </div>
               </h2>
               <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sunt sint cumque in sed sequi iste. Autem optio quae ducimus accusantium nulla eius iusto odio consectetur eaque unde, nesciunt officiis reprehenderit corrupti perferendis? Ut ab natus quas, officiis voluptatem libero suscipit iste minima, sit expedita temporibus. Culpa corporis, ipsum ipsa iste ad assumenda perferendis nostrum iusto debitis esse, aliquid dolores.</div>
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sunt
+                  sint cumque in sed sequi iste. Autem optio quae ducimus accusantium nulla eius iusto odio consectetur
+                  eaque unde, nesciunt officiis reprehenderit corrupti perferendis? Ut ab natus quas, officiis
+                  voluptatem libero suscipit iste minima, sit expedita temporibus. Culpa corporis, ipsum ipsa iste ad
+                  assumenda perferendis nostrum iusto debitis esse, aliquid dolores.</div>
               </div>
             </div>
-            
+
           </div>
         </div>
       </div>
@@ -305,22 +347,25 @@
           </div>
         </div>
         <div class="col-lg-8 col-12 r-content2" style="border-left: 1px solid var(--bg-box-color);">
-          <div class="d-flex flex-column gap-2 review">
-            <p class="common-text">
-              “ The team at Plutus is meticulous and committed. We have been
-              working with them for more than 3 years and they have been an
-              extended team for finance and accounts. Wish them all the very
-              best. ”
-            </p>
-            <h3 style="font-size: 28px;font-weight:600">Paras Arora</h3>
-            <p style="font-size: 16px;font-weight:400;color:var( --sub-text-color)">CEO, qDesq</p>
+          <div class=" review">
+            <div class=" d-flex flex-column gap-2 review-wrapper">
+              <p class="common-text">
+                “ The team at Plutus is meticulous and committed. We have been
+                working with them for more than 3 years and they have been an
+                extended team for finance and accounts. Wish them all the very
+                best. ”
+              </p>
+              <h3 style="font-size: 28px;font-weight:600">Paras Arora</h3>
+              <p style="font-size: 16px;font-weight:400;color:var( --sub-text-color)">CEO, qDesq</p>
+            </div>
+          
           </div>
         </div>
 
       </div>
     </div>
   </section>
- 
+
 
 
 
@@ -365,7 +410,7 @@
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>

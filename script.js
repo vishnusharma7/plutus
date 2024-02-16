@@ -1,4 +1,5 @@
  // Initialize Swiper
+
  var swiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
@@ -29,21 +30,13 @@
     updateActive(tabData);
   });
 
-  // Function to update active image and bottom part
-  function updateActive(tabData) {
-    // Update image
-    var activeImage = document.querySelector('.active-image img');
-    // Update bottom part
-    var parts = document.querySelectorAll('.part');
-    parts.forEach(function(part) {
-      part.classList.remove('active');
+ document.addEventListener('DOMContentLoaded', function () {
+      var reviewSwiper = new Swiper('.review-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: '.arrow1',
+          prevEl: '.arrow2',
+        },
+      });
     });
-    var activePart = document.querySelector('.part[data-part="' + tabData + '"]');
-    activePart.classList.add('active');
-  }
-  var activeTabs = document.querySelectorAll('.btn-tab');
-  activeTabs.forEach(function(tab) {
-    tab.classList.remove('active-btn-tab');
-  });
-  var activeTab = document.querySelector('.btn-tab[data-tab="' + tabData + '"]');
-  activeTab.classList.add('active-btn-tab');
