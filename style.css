@@ -300,6 +300,11 @@ footer {
     font-weight: 800;
     font-size: 28px;
     color: var(--bg-box-color);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.icon:hover{
+    background: var(--primary-bg);
 }
 .office{
     font-size: 14px;
