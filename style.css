@@ -374,3 +374,14 @@ svg{
     color: var(--text-grey);
     margin-bottom: 0.3em;
 }
+.middle-about{
+    background-image: url('assets/about.png');
+    background-size: cover;
+    height: 60%;
+}
+@media screen and (max-width:768px) {
+    .middle-about{
+        height: 50%;
+    }
+    
+}
