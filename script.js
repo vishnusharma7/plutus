@@ -58,6 +58,7 @@
         direction: 'horizontal',
         loop: true,
         slidesPerView:'auto',
+        autoplay: true,
         spaceBetween: 1220,
         centeredSlides: true,
         slideToClickedSlide: true,

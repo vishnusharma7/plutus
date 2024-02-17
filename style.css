@@ -208,7 +208,7 @@ h2 {
         font-size: 32px;
     }
     h2 {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .tab-items {
@@ -301,7 +301,7 @@ h2 {
     }
 
     .review {
-        padding: 1.5em;
+        padding: 1.2em;
 
     }
 
@@ -309,7 +309,17 @@ h2 {
         font-size: 18px !important;
     }
 }
-
+@media screen and (max-width: 768px) {
+    .common-text{
+        font-size: 16px;
+    }
+    .arrow-content{
+        gap: 0em !important;
+    }
+    .arrow1,.arrow2{
+        width: 40px;
+    }
+}
 footer {
     width: 100%;
     color: #ffff;
