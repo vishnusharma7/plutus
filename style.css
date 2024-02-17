@@ -59,19 +59,18 @@ p{
 } */
 .hero-section {
     width: 97%;
-    height: 60%;
-    margin: auto;
     overflow: hidden;
     margin-top: 6.5em;
-    border-radius: 2em;
-   
+    border-radius: 0.5em;
     max-width: 1300px;
    
 }
 
 @media screen and (max-width: 768px) {
     .hero-section{
-        height: 60%;
+        height: 50px;
+        margin-top: 0;
+        padding-top: 100px;
     }
     .navbar-nav{
         gap: 0.5em !important;

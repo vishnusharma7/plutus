@@ -7,7 +7,9 @@
     slidesPerView: 'auto',
     spaceBetween: 20,
     centeredSlides: true,
-    slideToClickedSlide: true
+    slideToClickedSlide: true,
+   
+    speed: 800,
   });
 
   // Handle tab click to slide
@@ -49,7 +51,9 @@
           autoplay: true,
           spaceBetween: 1220,
           centeredSlides: true,
-          slideToClickedSlide: true
+          slideToClickedSlide: true,
+          speed: 1500,
+          
       });
   });
   
@@ -59,9 +63,14 @@
         loop: true,
         slidesPerView:'auto',
         autoplay: true,
-        spaceBetween: 1220,
+        spaceBetween: 80,
         centeredSlides: true,
         slideToClickedSlide: true,
+        speed: 800,
+        autoplay: {
+          delay: 5000, // Delay between slides in milliseconds (5 seconds in this case)
+          disableOnInteraction: false, // Prevent autoplay from stopping when user interacts with the slider
+        },
         navigation: {
           nextEl: '.arrow1',
           prevEl: '.arrow2',
