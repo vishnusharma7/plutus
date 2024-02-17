@@ -144,7 +144,12 @@ section {
     margin: auto;
     padding: 2em;
     max-width: 1300px;
-    margin-top: 3em;
+    
+    
+}
+.top-section
+{
+    padding-top: 100px;
 }
 
 .custom-container {
