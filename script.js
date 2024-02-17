@@ -12,21 +12,21 @@
   });
 
   // Handle tab click to slide
-  var tabs = document.querySelectorAll('.btn-tab');
-  tabs.forEach(function(tab) {
-    tab.addEventListener('click', function() {
-      var tabData = this.dataset.tab;
-      var slideIndex = Array.from(this.parentElement.children).indexOf(this);
-      swiper.slideTo(slideIndex);
-      updateActive(tabData);
-      tabs.forEach(function(tab) {
-        tab.classList.remove('active-nav');
-      });
+  // var tabs = document.querySelectorAll('.btn-tab');
+  // tabs.forEach(function(tab) {
+  //   tab.addEventListener('click', function() {
+  //     var tabData = this.dataset.tab;
+  //     var slideIndex = Array.from(this.parentElement.children).indexOf(this);
+  //     swiper.slideTo(slideIndex);
+  //     updateActive(tabData);
+  //     tabs.forEach(function(tab) {
+  //       tab.classList.remove('active-nav');
+  //     });
     
-      // Add 'active-nav' class to the tab corresponding to the active slide
-      tabs[activeIndex].classList.add('active-nav');
-    });
-  });
+  //     // Add 'active-nav' class to the tab corresponding to the active slide
+  //     tabs[activeIndex].classList.add('active-nav');
+  //   });
+  // });
 
 //   Update active tab on slide change
   // swiper.on('slideChange', function () {
@@ -43,7 +43,37 @@
   //   tabs[activeIndex].classList.add('active-nav');
   // });
 
+  var tabs = document.querySelectorAll('.btn-tab');
+tabs.forEach(function(tab, index) {
+  tab.addEventListener('click', function() {
+    var tabData = this.dataset.tab;
+    var slideIndex = index; // Use the index of the clicked tab
+    swiper.slideTo(slideIndex);
+    updateActive(tabData);
+    
+    // Remove 'active-nav' class from all tabs
+    tabs.forEach(function(tab) {
+      tab.classList.remove('active-nav');
+    });
+    
+    // Add 'active-nav' class to the clicked tab
+    this.classList.add('active-nav');
+  });
+});
+
+swiper.on('slideChange', function () {
+  var activeIndex = swiper.realIndex;
+  var tabs = document.querySelectorAll('.btn-tab');
   
+  // Remove 'active-nav' class from all tabs
+  tabs.forEach(function(tab) {
+    tab.classList.remove('active-nav');
+  });
+
+  // Add 'active-nav' class to the tab corresponding to the active slide
+  tabs[activeIndex].classList.add('active-nav');
+});
+
 
  document.addEventListener('DOMContentLoaded', function () {
       var reviewSwiper = new Swiper('.review-swiper', {
