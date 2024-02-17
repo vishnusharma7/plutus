@@ -52,3 +52,18 @@
           slideToClickedSlide: true
       });
   });
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    var hero = new Swiper('.review-swipe', {
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView:'auto',
+        spaceBetween: 1220,
+        centeredSlides: true,
+        slideToClickedSlide: true,
+        navigation: {
+          nextEl: '.arrow1',
+          prevEl: '.arrow2',
+        },
+    });
+});
