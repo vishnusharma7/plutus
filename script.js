@@ -19,17 +19,31 @@
       var slideIndex = Array.from(this.parentElement.children).indexOf(this);
       swiper.slideTo(slideIndex);
       updateActive(tabData);
+      tabs.forEach(function(tab) {
+        tab.classList.remove('active-nav');
+      });
+    
+      // Add 'active-nav' class to the tab corresponding to the active slide
+      tabs[activeIndex].classList.add('active-nav');
     });
   });
 
 //   Update active tab on slide change
-  swiper.on('slideChange', function () {
-    var activeIndex = swiper.realIndex;
-    var tabs = document.querySelectorAll('.btn-tab');
-    var tab = tabs[activeIndex];
-    var tabData = tab.dataset.tab;
-    updateActive(tabData);
-  });
+  // swiper.on('slideChange', function () {
+  //   var activeIndex = swiper.realIndex;
+  //   var tabs = document.querySelectorAll('.btn-tab');
+  //   var tab = tabs[activeIndex];
+  //   var tabData = tab.dataset.tab;
+  //   updateActive(tabData);
+  //   tabs.forEach(function(tab) {
+  //     tab.classList.remove('active-nav');
+  //   });
+  
+  //   // Add 'active-nav' class to the tab corresponding to the active slide
+  //   tabs[activeIndex].classList.add('active-nav');
+  // });
+
+  
 
  document.addEventListener('DOMContentLoaded', function () {
       var reviewSwiper = new Swiper('.review-swiper', {
@@ -38,6 +52,9 @@
         navigation: {
           nextEl: '.arrow1',
           prevEl: '.arrow2',
+        },
+        pagination: {
+          el: ".swiper-pagination",
         },
       });
     });
