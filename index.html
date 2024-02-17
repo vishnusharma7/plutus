@@ -30,8 +30,8 @@
 
 <body>
   <nav class="navbar fixed-top z-3 navbar-expand-lg " style="background:var(--bg-box-color)">
-    <div class="container col-lg-6">
-      <a class="navbar-brand" href="#" style="max-width: 60%">
+    <div class="container col-lg-6" >
+      <a href="#" class="navbar-brand" href="#" style="max-width: 60%;margin-right:3.5em">
         <img src="assets/logo-1@2x.png" alt="" style="width: 120px;">
       </a>
    
@@ -45,7 +45,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex gap-5">
           <li class="nav-item ">
-            <a href="#" class="nav-link active" aria-current="page" href="#" style="color: #fff;">Home</a>
+            <a href="#" class="nav-link active-nav" aria-current="page" href="#" style="color: #fff;">Home</a>
           </li>
           <li class="nav-item">
             <a href="aboutUs.html" class="nav-link" href="#" style="color: #fff;">About us</a>
@@ -74,12 +74,14 @@
             </svg>
           </li>
         </ul>
-
       </div>
     </div>
   </nav>
   <!-- Hero section -->
-  <section class="hero-section d-flex gap-4 align-items-center justify-content-center">
+
+  <div class="swiper-container-hero" style="overflow:hidden">
+    <div class="swiper-wrapper" >
+  <section class="hero-section d-flex gap-4 align-items-center justify-content-center swiper-slide" style="    background-image: url('assets/kellysikkemag-91h3qzoaunsplash-1@2x.png'); background-size: cover;height:450px">
     <div class="container text-center col-lg-8 d-flex flex-column gap-2">
       <h2 class="primary-color-bg">Plutus Consulting</h2>
       <p class="text-color" style="font-size: 18px;">Plutus Consulting, or “PC” as we call it, has been a trusted
@@ -96,6 +98,42 @@
       </div>
     </div>
   </section>
+  <section class="hero-section d-flex gap-4 align-items-center justify-content-center swiper-slide " style="    background-image: url('assets/kellysikkemag-91h3qzoaunsplash-1@2x.png');  background-size: cover; height:450px">
+    <div class="container text-center col-lg-8 d-flex flex-column gap-2">
+      <h2 class="primary-color-bg">Plutus Consulting</h2>
+      <p class="text-color" style="font-size: 18px;">Plutus Consulting, or “PC” as we call it, has been a trusted
+        advisor to its clients since past many years. With over 55 years of man experience at leadership level our team
+        comprises CA, DISA, CS, LLB etc.</p>
+      <div class="d-flex align-items-center justify-content-center">
+        <button class="d-flex gap-2 align-items-center">Learn more
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M1.84568 9.12003e-07L12.2778 0C12.3637 -7.51328e-09 12.4462 0.0150111 12.5226 0.0425544C12.5335 0.0464892 12.5443 0.0506797 12.555 0.0551188C12.6383 0.0896865 12.7164 0.140514 12.7845 0.207601C12.7872 0.210213 12.7898 0.212845 12.7924 0.215498C12.9208 0.345869 13 0.524795 13 0.722222V11.1543C13 11.5532 12.6767 11.8765 12.2778 11.8765C11.8789 11.8765 11.5556 11.5532 11.5556 11.1543V2.46582L1.23291 12.7885C0.950865 13.0705 0.493579 13.0705 0.211534 12.7885C-0.0705113 12.5064 -0.0705113 12.0491 0.211534 11.7671L10.5342 1.44444L1.84568 1.44445C1.44681 1.44445 1.12346 1.1211 1.12346 0.722223C1.12346 0.323351 1.44681 9.12003e-07 1.84568 9.12003e-07Z"
+              fill="#ffffff" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="hero-section d-flex gap-4 align-items-center justify-content-center swiper-slide" style="    background-image: url('assets/kellysikkemag-91h3qzoaunsplash-1@2x.png'); background-size: cover; height:450px">
+    <div class="container text-center col-lg-8 d-flex flex-column gap-2">
+      <h2 class="primary-color-bg">Plutus Consulting</h2>
+      <p class="text-color" style="font-size: 18px;">Plutus Consulting, or “PC” as we call it, has been a trusted
+        advisor to its clients since past many years. With over 55 years of man experience at leadership level our team
+        comprises CA, DISA, CS, LLB etc.</p>
+      <div class="d-flex align-items-center justify-content-center">
+        <button class="d-flex gap-2 align-items-center">Learn more
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M1.84568 9.12003e-07L12.2778 0C12.3637 -7.51328e-09 12.4462 0.0150111 12.5226 0.0425544C12.5335 0.0464892 12.5443 0.0506797 12.555 0.0551188C12.6383 0.0896865 12.7164 0.140514 12.7845 0.207601C12.7872 0.210213 12.7898 0.212845 12.7924 0.215498C12.9208 0.345869 13 0.524795 13 0.722222V11.1543C13 11.5532 12.6767 11.8765 12.2778 11.8765C11.8789 11.8765 11.5556 11.5532 11.5556 11.1543V2.46582L1.23291 12.7885C0.950865 13.0705 0.493579 13.0705 0.211534 12.7885C-0.0705113 12.5064 -0.0705113 12.0491 0.211534 11.7671L10.5342 1.44444L1.84568 1.44445C1.44681 1.44445 1.12346 1.1211 1.12346 0.722223C1.12346 0.323351 1.44681 9.12003e-07 1.84568 9.12003e-07Z"
+              fill="#ffffff" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+</div>
   <!-- tab section -->
   <!-- Swiper -->
   <section class="custom-container">
@@ -112,8 +150,8 @@
 
     <!-- Swiper for image and bottom part -->
     <div class="swiper-container" style="overflow: hidden;">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide d-flex flex-column" data-part="taxation">
+      <div class="swiper-wrapper" id="tax-slide">
+        <div class="swiper-slide d-flex flex-column" data-part="taxation" style="background: #F7F7F7;">
           <div class="active-image">
             <img src="assets/tab-1.png" alt="">
           </div>
@@ -135,7 +173,7 @@
             </div>
           </div>
         </div>
-        <div class="swiper-slide d-flex flex-column" data-part="transaction">
+        <div class="swiper-slide d-flex flex-column" data-part="transaction" style="background: #F7F7F7;">
           <div class="active-image">
             <img src="assets/tab-1.png" alt="">
           </div>
@@ -157,7 +195,7 @@
             </div>
           </div>
         </div>
-        <div class="swiper-slide d-flex flex-column" data-part="secretarial">
+        <div class="swiper-slide d-flex flex-column" data-part="secretarial" style="background: #F7F7F7;">
           <div class="active-image">
             <img src="assets/tab-1.png" alt="">
           </div>
@@ -179,7 +217,7 @@
             </div>
           </div>
         </div>
-        <div class="swiper-slide d-flex flex-column" data-part="legal">
+        <div class="swiper-slide d-flex flex-column" data-part="legal" style="background: #F7F7F7;">
           <div class="active-image" style="max-width: 100%;">
             <img src="assets/tab-2.png" alt="" style="max-width:100%">
           </div>
@@ -365,9 +403,6 @@
       </div>
     </div>
   </section>
-
-
-
 
   <footer>
     <div class="d-flex flex-wrap gap-5 justify-content-evenly footer-head">

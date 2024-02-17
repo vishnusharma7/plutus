@@ -40,3 +40,15 @@
         },
       });
     });
+
+    document.addEventListener("DOMContentLoaded", function() {
+      var hero = new Swiper('.swiper-container-hero', {
+          direction: 'horizontal',
+          loop: true,
+          slidesPerView:'auto',
+          autoplay: true,
+          spaceBetween: 1220,
+          centeredSlides: true,
+          slideToClickedSlide: true
+      });
+  });
