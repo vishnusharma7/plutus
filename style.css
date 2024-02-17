@@ -438,3 +438,15 @@ width: fit-content;
     padding: 1em;
     background-color: var(--primary-bg);
 }
+.swiper-pagination {
+    top: 580PX !important; /* Adjust this value to position the pagination bullets as desired */
+  }
+.swiper-pagination-bullet{
+ 
+background-color: var(--primary-bg) !important;
+}
+@media screen and (max-width:768px) {
+    .swiper-pagination {
+        top: 450PX !important; /* Adjust this value to position the pagination bullets as desired */
+      }
+}
