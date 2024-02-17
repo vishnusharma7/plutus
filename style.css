@@ -376,13 +376,15 @@ svg{
 
 
 /* service page */
-.service_detail H3{
+.service_detail h3{
     font-weight: 600;
+    font-size: 36px;
 }
-.service_detail p{
+.service_detail a{
     color: var(--text-grey);
     text-transform:uppercase;
     font-weight: 500;
+    cursor: pointer;
 }
 .bg-grey{
     background: #EFEFEF;
@@ -420,4 +422,10 @@ svg{
 }
 .hero-section .swiper-slide{
     background: transparent !important;
+}
+
+.active-service{
+border-bottom: 3px solid var(--primary-bg);
+width: fit-content;
+
 }
