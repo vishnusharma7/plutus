@@ -83,9 +83,7 @@ swiper.on('slideChange', function () {
           nextEl: '.arrow1',
           prevEl: '.arrow2',
         },
-        pagination: {
-          el: ".swiper-pagination",
-        },
+       
       });
     });
 
@@ -99,6 +97,9 @@ swiper.on('slideChange', function () {
           centeredSlides: true,
           slideToClickedSlide: true,
           speed: 1500,
+          pagination: {
+            el: ".swiper-pagination",
+          },
           
       });
   });
