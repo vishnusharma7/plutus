@@ -319,6 +319,9 @@ h2 {
         width: 40px;
     }
 }
+.footer-head{
+    padding: 2em;
+}
 footer {
     width: 100%;
     color: #ffff;
@@ -427,4 +430,9 @@ svg{
 border-bottom: 3px solid var(--primary-bg);
 width: fit-content;
 
+}
+.footer-end{
+    width: 100%;
+    padding: 1em;
+    background-color: var(--primary-bg);
 }

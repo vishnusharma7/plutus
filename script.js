@@ -8,7 +8,6 @@
     spaceBetween: 20,
     centeredSlides: true,
     slideToClickedSlide: true,
-   
     speed: 800,
   });
 
