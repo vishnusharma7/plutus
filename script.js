@@ -53,11 +53,11 @@ tabs.forEach(function(tab, index) {
     
     // Remove 'active-nav' class from all tabs
     tabs.forEach(function(tab) {
-      tab.classList.remove('active-nav');
+      tab.classList.remove('active-btn-tab');
     });
     
     // Add 'active-nav' class to the clicked tab
-    this.classList.add('active-nav');
+    this.classList.add('active-btn-tab');
   });
 });
 
@@ -67,11 +67,11 @@ swiper.on('slideChange', function () {
   
   // Remove 'active-nav' class from all tabs
   tabs.forEach(function(tab) {
-    tab.classList.remove('active-nav');
+    tab.classList.remove('active-btn-tab');
   });
 
   // Add 'active-nav' class to the tab corresponding to the active slide
-  tabs[activeIndex].classList.add('active-nav');
+  tabs[activeIndex].classList.add('active-btn-tab');
 });
 
 

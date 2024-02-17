@@ -166,7 +166,7 @@ section {
 }
 
 .active-btn-tab {
-    border-bottom: 4px solid var(--primary-bg);
+    border-bottom: 2px solid var(--primary-bg);
 }
 
 .active-image {
