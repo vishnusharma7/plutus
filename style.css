@@ -11,7 +11,7 @@
     --text-color: RGB(3, 21, 33);
     --sub-text-color: RGB(107, 107, 132);
     --text-grey:#666666;
-    --bg-color: #FFFFFF;
+    --bg-color: #F7F7F7;
     --heading-color: #313131;
     --bg-grey-color: #fafafa;
     --bg-box-color: #1d1d1d;
@@ -33,7 +33,7 @@ body {
     margin: auto;
     scroll-behavior: smooth;
     color: var(--text-color);
-    background-color: #F7F7F7;
+    background-color: var(--bg-color);
     font-family: Manrope;
 }
 
