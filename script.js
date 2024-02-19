@@ -78,7 +78,8 @@ swiper.on('slideChange', function () {
  document.addEventListener('DOMContentLoaded', function () {
       var reviewSwiper = new Swiper('.review-swiper', {
         slidesPerView: 1,
-        spaceBetween: 30,
+        spaceBetween: 80,
+        loop: true,
         navigation: {
           nextEl: '.arrow1',
           prevEl: '.arrow2',
@@ -103,24 +104,37 @@ swiper.on('slideChange', function () {
           
       });
   });
-  
+
+
   document.addEventListener("DOMContentLoaded", function() {
-    var hero = new Swiper('.review-swipe', {
-        direction: 'horizontal',
-        loop: true,
-        slidesPerView:'auto',
-        autoplay: true,
-        spaceBetween: 80,
-        centeredSlides: true,
-        slideToClickedSlide: true,
-        speed: 800,
-        autoplay: {
-          delay: 5000, // Delay between slides in milliseconds (5 seconds in this case)
-          disableOnInteraction: false, // Prevent autoplay from stopping when user interacts with the slider
+    var blog = new Swiper('.blog-swiper', {
+      loop: true,
+      slidesPerView:'auto',
+      // autoplay: true,
+      navigation: {
+        nextEl: '.arrow2-blog',
+        prevEl: '.arrow1-blog',
+      },
+      breakpoints: {
+        1500:{
+          slidesPerView:3,
         },
-        navigation: {
-          nextEl: '.arrow1',
-          prevEl: '.arrow2',
+        1200:{
+          slidesPerView:4,
         },
+        768: {
+          slidesPerView: 2
+        },
+        // when window width is <= 576px (mobile)
+        576: {
+          slidesPerView: 1,
+          centeredSlides: true,
+        },
+        450: {
+          slidesPerView:'auto',
+          centeredSlides: true,
+        }
+      }
     });
 });
+  
