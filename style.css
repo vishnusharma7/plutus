@@ -478,6 +478,10 @@ svg{
   
    
   }
+  .service-cards{
+    width: 320px;
+
+  }
   .ag-courses-item_link:hover,
   .ag-courses-item_link:hover p, .ag-courses-item_link:hover,
   .ag-courses-item_link:hover h3 {
