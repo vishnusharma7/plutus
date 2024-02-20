@@ -24,7 +24,6 @@
     --bg-grey-color: #0e0e0e;
     --bg-box-color: #000000;
     --bg-grey:#0E0E0E;
-
     --text-color: #ffffff;
     --sub-text-color: #cfcfcf;
     --heading-color: #fff;
@@ -40,10 +39,10 @@ body {
     background-color: var(--bg-color);
     font-family: Manrope;
 }
-
+/* 
 ul {
     list-style: none;
-}
+} */
 
 a {
     text-decoration: none;
@@ -444,7 +443,7 @@ svg{
   
   .contact-cards{
     width: 260px;
-    height: 350px;
+    height: 250px;
     background: #ffffff;
     padding: 2em;
     border-radius: 1em;
@@ -498,7 +497,6 @@ svg{
     margin: 0 0 25px;
     overflow: hidden;
     font-weight: bold;
-    font-size: 30px;
     color: var(--text-grey);
     z-index: 2;
     position: relative;
@@ -654,4 +652,23 @@ padding: 2em;
 .blog-cards .swiper-slide{
     background-color: var(--bg-grey);
     text-align: start;
+}
+.img-service{
+
+}
+.img-service img{
+
+    border-radius: 0.5em;
+}
+.service-desc .service-desc-title{
+font-weight: 600;
+font-size: 17px;
+}
+.service-desc ol li{
+    font-size: 16px;
+}
+.contact-title{
+    font-size: 20px;
+    color: var(--text-grey);
+    margin-bottom: 1.5em;
 }
