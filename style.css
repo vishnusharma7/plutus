@@ -653,8 +653,8 @@ padding: 2em;
     background-color: var(--bg-grey);
     text-align: start;
 }
-.img-service{
-
+.img-service img{
+    max-width: 100% !important;
 }
 .img-service img{
 
