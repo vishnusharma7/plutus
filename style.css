@@ -606,6 +606,7 @@ padding: 2em;
 }
 .blog-card{
     width: 320px;
+    height: 450px;
     background-color: var(--bg-color);
     cursor: pointer;
     transition: 0.2s ease-in-out;

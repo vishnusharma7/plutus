@@ -110,6 +110,7 @@ swiper.on('slideChange', function () {
     var blog = new Swiper('.blog-swiper', {
       loop: true,
       slidesPerView:'auto',
+     
       // autoplay: true,
       navigation: {
         nextEl: '.arrow2-blog',
